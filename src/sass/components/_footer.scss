@@ -1,0 +1,15 @@
+.footer {
+    background-color: $couleur-footer;
+    text-align: center;
+    margin-top: 50px;
+    &__text {
+        color: $couleur;
+        font-size: 24px;
+        line-height: 65px;
+    }
+    &__logo {
+        width: 122px;
+        height:auto;
+        margin-top: 30px;
+    }
+}

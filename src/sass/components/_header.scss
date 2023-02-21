@@ -1,0 +1,30 @@
+//////////////////
+// STYLE HEADER //
+/////////////////
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-width;
+    margin: auto;
+    &__logo {
+        height: 68px;
+        width: auto;
+    }
+    &__navigation {
+        display: flex;
+        list-style: none;
+        font-size: 24px;
+    }
+    &__accueil {
+        margin-right: 50px;
+        color: $couleur-primaire;
+        text-decoration: none;
+    }
+    &__apropos {
+        color: $couleur-primaire;
+        text-decoration: none;
+    }
+}
+

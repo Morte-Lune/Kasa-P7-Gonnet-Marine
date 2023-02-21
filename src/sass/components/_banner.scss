@@ -1,0 +1,24 @@
+.banner {
+    border-radius: 25px;
+    height: 223px;
+    max-width: $max-width;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background: url(..//../assets/img-home.svg) center/cover;
+   // background: rgb(0, 0, 0);
+    //background-blend-mode: darken;
+   // opacity: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(70%);
+
+
+
+    &__titre {
+        font-size: 48px;
+        color: $couleur;
+        
+    }
+}
