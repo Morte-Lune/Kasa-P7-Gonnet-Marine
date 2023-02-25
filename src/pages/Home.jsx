@@ -14,7 +14,8 @@ function Home() {
     // Permet de stocker les données retour de l'api dans le state : 
     const [data, setData] = useState([]);
 
-    // Permet de déclencher un fetch : 
+    // Permet de déclencher un fetch :
+    // APPEL DE L'api et on précise un tableau de dépendances vide : 
     useEffect(() => {
         fetch(`/logements.json`)
              .then((res) => {
@@ -23,8 +24,6 @@ function Home() {
              .then((data)=> setData(data))
              .catch((error)=> console.error(error));
      }, [])
-     console.log(data);
-
     return (
         <div>
             <Header />

@@ -8,6 +8,7 @@
     align-items: center;
     max-width: $max-width;
     margin: auto;
+    padding-top: 40px;
     &__logo {
         height: 68px;
         width: auto;
@@ -16,15 +17,22 @@
         display: flex;
         list-style: none;
         font-size: 24px;
+        font-weight: 500;
     }
     &__accueil {
-        margin-right: 50px;
+        margin-right: 57px;
         color: $couleur-primaire;
         text-decoration: none;
+        &:hover {
+            text-decoration-line: underline;
+        }
     }
     &__apropos {
         color: $couleur-primaire;
         text-decoration: none;
+        &:hover {
+            text-decoration-line: underline;
+        }
     }
 }
 

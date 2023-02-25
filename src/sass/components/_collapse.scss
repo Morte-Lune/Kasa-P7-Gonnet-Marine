@@ -1,0 +1,42 @@
+.conteneurCollapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__boutton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $couleur;
+        background-color: $couleur-primaire;
+        width: 70%;
+        //width : 1023px sur figma
+        border: none;
+        margin-bottom: 31px;
+        line-height: 34px;
+        border-radius: 5px;
+        height: 47px;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(0,1,0,1);
+        &:hover {
+            cursor: pointer;
+            // Mettre le mode darken pour assombrir le couleur de base : 
+            background-color: brown;
+        }
+    }
+    &__titre {
+       margin-left: 15px;
+       font-size: 24px;
+       font-weight: 200;
+    }
+    &__icone {
+        margin-right: 15px;
+    }
+}
+.textContent {
+    background-color: olive;
+    width: 70%;
+}
+.information {
+    margin-bottom: 200px;
+    margin-top: 31px;
+}
