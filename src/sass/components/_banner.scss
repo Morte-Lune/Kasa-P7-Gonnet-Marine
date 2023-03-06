@@ -1,23 +1,40 @@
-/////////////////
-// BANNER STYLE //
+//////////////////
+// STYLE BANNER //
 /////////////////
 
 .banner {
-    border-radius: 25px;
-    height: 223px;
-    max-width: $max-width;
-    margin: auto;
-    margin-top: 68px;
-    //Mettre sur le contenaire Card :
-    //margin-bottom: 43px;
-    background: linear-gradient(#00000055,#00000055), url(..//../assets/img-home.svg) center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &__titre {
-        font-size: 48px;
-        color: $couleur;
-        font-weight: 500;
+  border-radius: 25px;
+  height: 223px;
+  margin-right: 6%;
+  margin-left: 6%;
+  margin-top: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__titre {
+    font-size: 48px;
+    color: $couleur;
+    font-weight: 500;
+    @media only screen and (max-width: 768px) {
+      font-size: 24px;
+      width: 217px;
+      margin-left: 16px;
     }
-}
+  }
+  @media only screen and (max-width: 768px) {
+    height: 111px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
 
+  &__home {
+    background: linear-gradient(#00000055, #00000055),
+      url(..//../assets/img-home.svg) center/cover;
+  }
+
+  &__aPropos {
+    background: linear-gradient(#00000055, #00000055),
+      url(..//../assets/img-apropos.svg) center/cover;
+  }
+}

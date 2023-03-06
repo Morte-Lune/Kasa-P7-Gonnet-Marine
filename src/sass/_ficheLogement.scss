@@ -1,0 +1,78 @@
+//////////////////////////////////////
+// STYLE DE LA PAGE : ficheLogement //
+/////////////////////////////////////
+
+.principal {
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+.containerBloc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  @media only screen and (max-width: 768px) {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__left {
+    &--titre {
+      font-size: 36px;
+      font-weight: 500;
+      margin: 0;
+      line-height: 51px;
+      @media only screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    &--location {
+      line-height: 26px;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  &__rigth {
+    text-align: right;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--host {
+      display: flex;
+      margin-bottom: 20px;
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+      }
+      .nameHost {
+        width: min-content;
+        margin-right: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        @media only screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+      .pictureHost {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        @media only screen and (max-width: 768px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

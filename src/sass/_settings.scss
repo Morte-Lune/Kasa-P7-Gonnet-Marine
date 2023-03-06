@@ -1,13 +1,9 @@
-//////////////////////////
-// *REGLAGE PRINCIPALE* //
-/////////////////////////
+//////////////////
+// * SETTINGS * //
+/////////////////
 
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;400;500;700 & display=swap');
 
-
-//~~~~ MES VARIABLES ~~~~//
-
-// Couleurs : 
 $couleur-primaire: #FF6060;
 $couleur-secondaire: #F6F6F6;
 $couleur-terciaire: #E5E5E5;
@@ -15,17 +11,14 @@ $couleur-footer: #000000;
 $couleur: #FFFFFF;
 $linear-gradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%);
 
-// Valeurs : 
-$max-width: 1240px;
 
-// MES MIXINS : 
 * {
     font-family: "Montserrat";
+    color: $couleur-primaire;
 }
+
 
 body {
     margin: 0;
-    padding: 0;
-    height: 100vh;
   }
 

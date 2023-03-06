@@ -1,16 +1,26 @@
+//////////////////
+// STYLE FOOTER //
+/////////////////
+
 .footer {
-    height: 209px;
-    background-color: $couleur-footer;
-    text-align: center;
-    &__text {
-        color: $couleur;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 35px;
+  height: 209px;
+  background-color: $couleur-footer;
+  text-align: center;
+  @media only screen and (max-width: 768px) {
+    margin-top: 21px;
+  }
+  &__text {
+    color: $couleur;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
     }
-    &__logo {
-        margin-top: 66px;
-        width: 122px;
-        height:auto;
-    }
+  }
+  &__logo {
+    margin-top: 66px;
+    width: 122px;
+    height: auto;
+  }
 }

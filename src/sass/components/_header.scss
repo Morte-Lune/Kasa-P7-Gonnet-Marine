@@ -3,36 +3,49 @@
 /////////////////
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 6%;
+  margin-left: 6%;
+  padding-top: 40px;
+  @media only screen and (max-width: 768px) {
+    padding-top: 20px;
+  }
+  &__logo {
+    height: auto;
+    width: 210px;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+      width: 145px;
+    }
+  }
+  &__navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: $max-width;
-    margin: auto;
-    padding-top: 40px;
-    &__logo {
-        height: 68px;
-        width: auto;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 500;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+      text-transform: uppercase;
     }
-    &__navigation {
-        display: flex;
-        list-style: none;
-        font-size: 24px;
-        font-weight: 500;
+    &--accueil {
+      margin-right: 57px;
+      color: $couleur-primaire;
+      text-decoration: none;
+      @media only screen and (max-width: 768px) {
+        margin-right: 10px;
+      }
+      &:hover {
+        text-decoration-line: underline;
+      }
     }
-    &__accueil {
-        margin-right: 57px;
-        color: $couleur-primaire;
-        text-decoration: none;
-        &:hover {
-            text-decoration-line: underline;
-        }
+    &--apropos {
+      color: $couleur-primaire;
+      text-decoration: none;
+      &:hover {
+        text-decoration-line: underline;
+      }
     }
-    &__apropos {
-        color: $couleur-primaire;
-        text-decoration: none;
-        &:hover {
-            text-decoration-line: underline;
-        }
-    }
+  }
 }
-

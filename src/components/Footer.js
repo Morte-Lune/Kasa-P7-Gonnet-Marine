@@ -1,11 +1,11 @@
 ////////////
 // FOOTER //
-////////////
+///////////
 
 import logoFooter from "../assets/logo-footer.svg";
 
 function Footer() {
-    
+  
   return (
     <div className="footer">
       <img src={logoFooter} alt="Logo Kasa" className="footer__logo" />

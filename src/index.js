@@ -1,10 +1,13 @@
-// Initialisation de notre application React et greffée au HTML grâce à l'id root : 
+///////////////////////////////////////////////
+// Initialisation de notre application React //
+//////////////////////////////////////////////
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./sass/main.scss";
 
+// Application greffée à l'index.html grâce à l'id root : 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
