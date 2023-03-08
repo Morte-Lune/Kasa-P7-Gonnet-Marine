@@ -29,23 +29,38 @@
       font-size: 12px;
       text-transform: uppercase;
     }
+
     &--accueil {
       margin-right: 57px;
       color: $couleur-primaire;
-      text-decoration: none;
       @media only screen and (max-width: 768px) {
         margin-right: 10px;
-      }
-      &:hover {
-        text-decoration-line: underline;
-      }
-    }
-    &--apropos {
-      color: $couleur-primaire;
-      text-decoration: none;
-      &:hover {
-        text-decoration-line: underline;
       }
     }
   }
 }
+
+.list {
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.list__active {
+  text-decoration: none;
+  list-style-type: none;
+      position:relative;
+      &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+         bottom: 0px;
+
+      }
+  }
+
+
+
+
+

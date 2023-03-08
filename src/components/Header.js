@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   
+
   return (
     <header className="header">
       <img
@@ -16,10 +17,12 @@ function Header() {
       />
       <nav>
         <ul className="header__navigation">
-          <NavLink className="header__navigation--accueil" to="/">
+          <div className="header__navigation--accueil">
+          <NavLink to="/"  className= {(list) => (list.isActive ? "listactive" : "list")} >
             <li> Accueil</li>
           </NavLink>
-          <NavLink className="header__navigation--apropos" to="/APropos">
+          </div>
+          <NavLink to="/APropos"  className= {(list) => (list.isActive ? "listactive" : "list")} >
             <li> A propos</li>
           </NavLink>
         </ul>

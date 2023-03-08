@@ -46,22 +46,29 @@ body {
 .header__navigation--accueil {
   margin-right: 57px;
   color: #FF6060;
-  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   .header__navigation--accueil {
     margin-right: 10px;
   }
 }
-.header__navigation--accueil:hover {
-  text-decoration-line: underline;
-}
-.header__navigation--apropos {
-  color: #FF6060;
+
+.list {
   text-decoration: none;
+  list-style-type: none;
 }
-.header__navigation--apropos:hover {
-  text-decoration-line: underline;
+
+.list__active {
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+}
+.list__active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
 }
 
 .banner {
@@ -535,7 +542,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .number {
-    font-size: 13px;
+    display: none;
   }
 }
 

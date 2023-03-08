@@ -3,6 +3,8 @@
 ///////////////////
 
 import { Link } from "react-router-dom";
+
+// Composants nécessaires à ma page "ErrorPage" :
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 

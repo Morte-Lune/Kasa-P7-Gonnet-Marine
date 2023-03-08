@@ -2,11 +2,13 @@
 // COLLAPSE //
 /////////////
 
+//Hook useLocation :
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import chevron from "../assets/flecheBas.svg";
 import chevronHaut from "../assets/flecheHaut.svg";
+
 
 function Collapse(info) {
   

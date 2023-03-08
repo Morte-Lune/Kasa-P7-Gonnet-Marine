@@ -11,10 +11,12 @@ function Carrousel({ images }) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Définition d'une fonction "handleNext" pour passer à l'image suivante :
   const handleNext = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
+   // Définition d'une fonction "handlePrev" pour passer à l'image précédente
   const handlePrev = () => {
     setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
   };

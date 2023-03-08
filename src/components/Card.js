@@ -2,6 +2,7 @@
 // CARD //
 /////////
 
+// Importation de PropTypes pour vérifier le type des props :
 import PropTypes from "prop-types";
 
 function Card({ title, cover }) {
@@ -15,6 +16,7 @@ function Card({ title, cover }) {
     </div>
   );
 }
+
 
 Card.propTypes = {
   title: PropTypes.string,

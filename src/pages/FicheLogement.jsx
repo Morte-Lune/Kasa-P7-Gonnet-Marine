@@ -3,8 +3,10 @@
 ///////////////////
 
 import { useState, useEffect } from "react";
+// Hooks useParams, useNavigate : 
 import { useParams, useNavigate } from "react-router-dom";
 
+// Composants nécessaires à ma page "Fiche logement" :
 import Header from "../components/Header";
 import Etoiles from "../components/Etoiles";
 import Collapse from "../components/Collapse";
@@ -13,9 +15,11 @@ import Tag from "../components/Tag";
 import Carrousel from "../components/Carrousel";
 
 function FicheLogement() {
-  
+
+  // Récupération du paramètre d'URL (id du logement) :
   const { id } = useParams();
   const [data, setData] = useState(null);
+  // Utilisation du Hook "useNavigate" pour naviguer vers la page d'erreur si le logement n'est pas trouvé : 
   const navigate = useNavigate();
 
   ///////////
@@ -26,8 +30,11 @@ function FicheLogement() {
       try {
         const response = await fetch("/logements.json");
         const data = await response.json();
+          // Recherche du logement correspondant à l'id récupéré depuis l'URL :
         const dataLogement = data.find((item) => item.id === id.toString());
         setData(dataLogement);
+
+          // Redirection vers la page d'erreur :
         if (!dataLogement) {
           navigate("error");
         }
@@ -38,6 +45,7 @@ function FicheLogement() {
     fetchData();
   }, [id, navigate]);
 
+  // Rendu de la page : 
   return (
     <div>
       {data ? (
